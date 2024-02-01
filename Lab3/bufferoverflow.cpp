@@ -6,7 +6,7 @@ int main(int argc, char *argv[]) {
     char grade[5];
     char name[10];
 
-    strcpy(grade, "nil");
+    strcpy(grade, "0");
 
     gets(name);
 
