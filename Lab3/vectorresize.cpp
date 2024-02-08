@@ -8,6 +8,6 @@ class HelloWorld {
 
 int main() {
     std::vector<HelloWorld> v;
-    v.resize(10);
+    v.resize(10, 0);
     return 0;
 }
