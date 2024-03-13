@@ -4,32 +4,32 @@
 
 class BloomFilter {
   private:
-    std::bitset<512> bitset;
+    std::bitset<32768> bitset;
     size_t hash1(const std::string &key) {
         size_t hash = 0;
         for (char c : key) {
             hash = 31 * hash + c;
-            hash = hash % 512;
+            hash = hash % 32768;
         }
-        return hash % 512;
+        return hash % 32768;
     }
 
     size_t hash2(const std::string &key) {
         size_t hash = 0;
         for (char c : key) {
             hash = 17 * hash + c;
-            hash = hash % 512;
+            hash = hash % 32768;
         }
-        return hash % 512;
+        return hash % 32768;
     }
 
     size_t hash3(const std::string &key) {
         size_t hash = 0;
         for (char c : key) {
             hash = 19 * hash + c;
-            hash = hash % 512;
+            hash = hash % 32768;
         }
-        return hash % 512;
+        return hash % 32768;
     }
 
   public:
