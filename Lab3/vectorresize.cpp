@@ -1,13 +1,13 @@
 #include <vector>
 class HelloWorld {
-    int num;
+  int num;
 
-  public:
-    HelloWorld(int _num) { num = _num; }
+public:
+  HelloWorld(int _num) { num = _num; }
 };
 
 int main() {
-    std::vector<HelloWorld> v;
-    v.resize(10, 0);
-    return 0;
+  std::vector<HelloWorld> v;
+  v.resize(10, 0);
+  return 0;
 }

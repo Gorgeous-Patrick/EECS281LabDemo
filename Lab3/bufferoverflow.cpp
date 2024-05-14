@@ -3,14 +3,14 @@
 #include <string.h>
 
 int main(int argc, char *argv[]) {
-    char grade[5];
-    char name[10];
+  char grade[5];
+  char name[10];
 
-    strcpy(grade, "0");
+  strcpy(grade, "0");
 
-    gets(name);
+  gets(name);
 
-    printf("Hi %s! Your grade is %s.\n", name, grade);
+  printf("Hi %s! Your grade is %s.\n", name, grade);
 
-    exit(0);
+  exit(0);
 }
